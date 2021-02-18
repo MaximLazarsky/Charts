@@ -4,7 +4,7 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 import { monthStatistics, dayStatistics } from "../../data";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useStyles } from './stylesDateChart'
-import { Typography, NativeSelect, Paper } from '@material-ui/core';
+import { NativeSelect, Paper } from '@material-ui/core';
 import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
@@ -61,14 +61,25 @@ export default function DateChart() {
             width={'640px'}
             height={'340px'}
             chartType="LineChart"
-            loader={<ScaleLoader color={"#d4eeea"} className="loader" />}
+            loader={<ScaleLoader color={"#4a90e2"} className="loader" />}
             data={data}
             options={{
-              vAxis: { format: 'short', gridlines: { count: 4 } },
-              hAxis: { gridlines: { color: "transparent", count: 5 } },
+              vAxis: { 
+                format: 'short', 
+                gridlines: { count: 4 },
+                textStyle: { color: '#637279', 
+                   fontName: 'Rubik', 
+                   fontSize: 16 } },
+              hAxis: { 
+                format: duration=== 'month' ? 'MMM d' : 'hh:mm', 
+                gridlines: { color: "transparent", count: 5 },
+                textStyle: { color: '#637279', 
+                   fontName: 'Rubik', 
+                   fontSize: 16 } 
+              },
               curveType: 'function',
               legend: "none",
-              chartArea: { left: "10px", top: "5px", width: "90%", height: "90%" },
+              chartArea: { left: "10px", top: "5px", width: "90%", height: "87%" },
               colors: ["#4a90e2"],
               lineWidth: 5
             }}

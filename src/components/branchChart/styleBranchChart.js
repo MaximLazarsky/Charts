@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles({
+  branchChart: {
+    marginTop: "30px",
+  },
   titleDuaration: {
     display: "flex",
     justifyContent: "space-between",
@@ -13,11 +16,11 @@ export const useStyles = makeStyles({
     fontWeight: 500,
     color: "#323a44",
   },
-  selectDuration: {
+  selectBranch: {
     borderRadius: "6px",
-    background: "#fff",
+    background: "#ececec",
+    paddingLeft: "10px",
     fontSize: "12px !important",
-    padding: "2px 14px 1px 12px",
     color: "#323a44",
     "&&&:before": {
       display: "none",
@@ -51,7 +54,11 @@ export const useStyles = makeStyles({
     borderRadius: "50%",
     color: "#323a44",
   },
+  firstGraphTitleRight: {
+    display: "flex",
+  },
   firstGraphTitleRightIcon: {
+    marginLeft: "15px",
     width: "30px",
     height: "30px",
     background: "#ececec",
@@ -60,44 +67,5 @@ export const useStyles = makeStyles({
     justifyContent: "center",
     borderRadius: "6px",
     color: "#323a44",
-  },
-  graphSection: {
-    display: "flex",
-    marginTop: "30px",
-    padding: "0 40px 40px 25px",
-  },
-  graphSectionNumber: {
-    fontSize: "70px",
-    fontWeight: "500",
-    fontFamily: "Rubik",
-    color: "#323a44",
-  },
-  graphSectionSingUps: {
-    fontSize: "18px",
-    fontWeight: "500",
-    fontFamily: "Rubik",
-    marginTop: "10px",
-    color: "#323a44",
-  },
-  graphSectionDescription: {
-    display: "flex",
-    marginTop: "10px",
-    width: "320px",
-  },
-  iconSection: {
-    width: "32px",
-    height: "32px",
-    borderRadius: "50%",
-    background: "#d9ffd6",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "#55ad4c",
-  },
-  graphSectionDescriptionText: {
-    color: "#60717a",
-    fontSize: "14px",
-    fontFamily: "Rubik",
-    marginLeft: "15px",
   },
 });
