@@ -12,7 +12,7 @@ export default function BarChart({branchesObject, branch, handleChange}) {
         <Paper className={classes.branchChart}>
           <div className={classes.firstGraphTitle}>
             <div className={classes.firstGraphTitleLeft}>
-              <p className={classes.firstGraphTitleText}> Completed sign-ups over time </p>
+              <p className={classes.firstGraphTitleText}>Flow dropout per step and service</p>
               <div className={classes.firstGraphTitleLeftIcon}>
                 <InfoOutlinedIcon style={{ fontSize: 14 }} />
               </div>
